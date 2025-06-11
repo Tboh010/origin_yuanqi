@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的简历</title>
+  <style>
+
+    .flex{
+      display: flex;
+    }
+    .column{
+      flex-direction: column;
+    }
+   /* *{
+      border: 2px solid black;
+    } */
+    body{
+      display: flex;
+      justify-content: center;
+      background-color: azure;
+      
+    }
+    .jianji{
+     width: auto;
+     height: auto;
+     background-color: #fff;
+     
+
+    }   
+    .jianji1{
+       width: 800px; 
+       padding:  100px;
+
+    }
+    .kaui{
+      display: block;
+    }
+    .zi{
+      font-size: 22px;
+    }
+    .stitle{
+      font-size: 26px;
+      background-color: black;
+      color: #fff;
+      padding: 5px;
+    }
+    .xian{
+      border-bottom: 2px solid rgb(0, 0, 0);
+      margin-bottom: 13px;
+      width: 87%;
+    }
+    .center1{
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+    }
+   b1{
+  font-weight: 600;
+   }
+   
+   .yicun>img{
+    width: 100px;
+   }
+   .navigation {
+      width: 100%;
+      height: 65px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .navigation>ul{
+      list-style-type: none;
+      display: block;
+      display: flex;
+      width: auto;
+
+
+    }
+    .kuai{
+      display: block;
+      margin: 20px;
+    }
+    .items{
+      font-size: 25px;
+      /* font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; */
+      font-family:"微软雅黑";
+      color: rgb(192, 192, 192);
+    }
+    a {
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body class="column">
+  <!-- 导航栏 -->
+  <div class="navigation">
+    <ul class="kuai ">
+      <li class="kuai"><a href="index.html" class="items">主页</a></li>
+      <li class="kuai"><a href="index.html"  class="items">关于我</a></li>
+      <li class="kuai"><a href="index.html"  class="items">联系我</a></li>
+    </ul>
+  </div>
+  <div class="jianji">
+    <h1 class="center1">我的简历</h1>
+    <div class="jianli1">
+      <!-- 基本信息 -->
+      <div class="">
+        <!-- 标题 -->
+        <div class="flex"><span class="stitle ">基本信息</span><span class="kaui xian" ></span></div>
+       <!-- 内容 -->
+        <div class="zi flex">
+          <p class="hezi" style="flex:2;">姓 名：杨**<br>
+            学 历：本科<br>
+           电 话：157****4581<br>
+        </p>
+        <p class="hezi" style="flex:2;">性 别：男<br>
+        年 龄：25<br>
+        邮 箱：294****4633@qq.com<br></p>
+        <div class="yicun center1" style="flex:1;">
+          <img  class="heizi"  src="img/yicun.jpg" alt="">
+        </div>
+         </div>
+
+      </div>
+      <!-- 教育背景 -->
+      <div class="">
+        <div class="flex"><span class="stitle ">教育背景</span><span class="kaui xian"></span></div>
+<div class="zi column">
+  <div class=" flex"><p class="hezi" style="flex:1;">海南****学院</p>
+  <p class="hezi"style="flex:1;">软件工程</p>
+  <p class="hezi"style="flex:1;">2019.07-2022.06</p></div>
+  <div class="flex"> <p class="hezi"style="flex:1;"">****学院</p>
+  <p class="hezi"style="flex:1;">软件工程</p>
+  <p class="hezi"style="flex:1;">2022.09-2024.06</p></div>
+</div>
+      </div>
+      <!-- 求职意向 -->
+      <div class="">
+        <div class="flex"><span class="stitle ">求职意向</span><span class="kaui xian"></span></div>
+        <div class="zi">
+          java开发岗相关工作
+        </div>
+        
+      </div>
+      <!-- 专业技能 -->
+      <div class="">
+        <div class="flex"><span class="stitle ">专业技能</span><span class="kaui xian"></span></div>
+        <div class="zi">
+          <p>1、具备扎实的编程基础，精通Java 语言，熟悉 JVM，内存模型，并发编程。<br>
+          2、可以灵活运用设计模式，如:单例、工厂、策略等设计模式进行项目开发。<br>
+          3、熟悉 Spring、SpringMVC、SpringBoot、SpringCloud、Mybaits等开发技术。<br>
+          4、熟悉分布式常见解决方案:分布式事务、分布式一致性、分布式锁。<br>
+          5、熟悉关系型数据库 MySQL，有一定的 SQL优化经验。<br>
+          6、熟练使用 Redis 等非关系型数据库。<br>
+          7、熟练运用 RabbitMQ消息中间件。<br>
+          8、熟练运用 git、Linux操作系统等基本命令。</p>
+        </div>
+      </div>
+      <!-- 项目经历 -->
+      <div class="">
+        <div class="flex"><span class="stitle ">项目经历</span><span class="kaui xian"></span></div>
+        <div class="zi">
+          <p><b1>项目描述：</b1>
+          该项目旨在打造一个供广大用户进行参与各种社交和交流的社交平台，项目分成公司端、租户端、用户端三个使用端，公司通过社交产品免费提供给租户使用，提供资源，推流，广告发布等；租户通过向公司购买资源进行发布活动吸引用户和维护流量；用户可以通过平台参与平台活动，发布动态，
+          私信交友，充值打赏等社交活动。<br>
+          产品介绍：项目分为三个使用端<br>
+          公司端：公司通过运维系统管理礼物/金币/会员/广告等资源，同时审核租户的金币订单。<br>
+          租户端：免费租用公司的产品，需要购买公司的金币发布活动，投放广告，维持用户活跃度和流量。<br>
+          用户端：通过平台参与活动，进行抢福袋，积分兑换福袋，发布动态并且获得积分，私信交友，充值等为了提高租户和用户的积极性，公司与租户，用户之间有对应的提成规则。<br>
+          <b1>技术栈：</b1>SpringBoot、SpringCloud、RabbitMQ、Redis、Mysql、分布式、高并发场景<br>
+          <b1>责任描述：</b1>参与部分模块组件的设计，开发文档边的编写和编码工作。<br>
+          1、租户服务组件：租户进行金币下单服务的接口，进行发布活动所需的金币数量的管理<br>
+          2、租户活动组件：活动发布，活动管理，活动列表查询，包括发布红包活动，发布福袋活动，积分兑换福袋活动等接口的开发。<br>
+          <br>
+          <br>
+          <b1>项目描述：</b1>
+          该项目是基于Spring Boot的在线刷题平台，采用前后端分离架构。前端运用Vue框架，后端使用Spring<br>
+          Boot技术栈，数据库选用MySQL。主要功能包括用户身份管理、题库管理、答题系统、招聘信息管理等。用户可在线练习、查看解析、发表讨论及搜索求职信息，管理员能进行用户资料、试题、招聘信息等管理。经测试各模块运行正常，但部分功能有待完善。此平台为使用者提供便捷学习方式，有助于提升能力，适应市场与用户需求，未来可在多方面改进优化。<br>
+          <b1>产品介绍</b1>：项目分为两个使用端
+          管理员端：用户身份管理、题库管理、答题系统、招聘信息管理。<br>
+          用户端：用户可在线练习、查看解析、发表讨论及搜索求职信息。<br>
+          <b1>技术栈：</b1>Vue2、Nust.js、Javascript、SpringBoot、Mysql、Mybatis、<br>
+          <b1>责任描述：</b1><br>
+          前端：运用Vue.js和Nuxt.js技术，负责用户登录、讨论、答题、求职等模块的前端页面设计与实现，包括界面布局、交互效果等，确保与后端高效协作，实现数据动态加载和功能交互。<br>
+          后端开发人员：基于Spring Boot框架，承担用户信息、题库、招聘、讨论信息等管理模块的设计与实现。处理业务逻辑，与数据库交互，保障系统功能稳定运行，提供安全可靠的服务支持。</p>
+        </div>
+      </div>
+      <!-- 自我评价 -->
+      <div class="">
+        <div class="flex"><span class="stitle ">自我评价</span><span class="kaui xian"></span></div>
+        <div class="zi">
+          <p>作为一名软件工程学生，我系统掌握了Java语言及其相关技术，熟练使用IDEA进行开发。我对SQL语句的操作、前端技术如HTML、JavaScript等有良好的理解，同时对主流框SpringBoot和SpringCloud有一定了解。<br>在项目实践中，我积累了丰富的经验，从社交平台到在线教育系统，涉及分布式、高并发等技术，培养了扎实的编码能力。
+          我的工作态度认真负责，善于独立思考和解决问题，同时重视与团队的有效沟通。我热爱编程，乐于学习新技术，不断提升自己的专业能力。未来的职业生涯中，我期待在Java开发领域不断成长，为企业创造价值。</p>
+        
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
